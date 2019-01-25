@@ -1,0 +1,10 @@
+
+
+<resources>
+    <color name="toolbar_title">#ffffff</color>
+    <color name="primary">#4caad9</color>
+    <color name="primary_dark">#7fbbd9</color>
+    <color name="accent">#78909c</color>
+    <color name="control_normal">#12bbea</color>
+    <color name="fab_pressed">#546e7a</color>
+</resources>

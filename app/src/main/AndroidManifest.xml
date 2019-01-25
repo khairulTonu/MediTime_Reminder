@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.blanyal.remindme">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon,android:theme">
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HomePage"
+            android:label="Home"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_add_reminder" />
+        <activity
+            android:name=".ReminderAddActivity"
+            android:label="@string/title_activity_add_reminder"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ReminderEditActivity"
+            android:label="@string/title_activity_edit_reminder" />
+        <activity
+            android:name=".LicencesActivity"
+            android:label="@string/title_activity_licenses" />
+
+        <receiver android:name=".AlarmReceiver" />
+        <receiver android:name=".BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Image_Recognition"
+            android:label="@string/title_activity_add_reminder" />
+        <activity
+            android:name=".UserEditData"
+            android:label="@string/title_activity_add_reminder" />
+        <activity android:name=".TakePicture" />
+        <activity
+            android:name=".ManageReminderAddActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".MorningActivity" />
+        <activity android:name=".NoonActivity" />
+        <activity android:name=".NightActivity" />
+        <activity android:name=".Developer1" />
+        <activity android:name=".Developer2" />
+        <activity android:name=".Licences"></activity>
+    </application>
+
+</manifest>
